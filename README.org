@@ -1,0 +1,7 @@
+* Project Euler Solutions
+Some of my [[https://projecteuler.net][Project Euler]] solutions as python programs
+** Running
+Bonus instructions may be printed by the program, but most them are run with
+#+BEGIN_SRC shell
+python <program_file_name>
+#+END_SRC
