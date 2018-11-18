@@ -10,17 +10,16 @@ What is the 10 001st prime number?
 def prime(n):
     # could cheat with SymPy, but that is not fun.
     i = 2
-    prime_count = 0
-    while True:
+    prime_count = 1
+    while prime_count < n:
+        i += 1
         if is_prime(i):
             prime_count += 1
-        if prime_count == n:
-            return i
-        i += 1
+    return i
 
 
 def is_prime(n):
-    for i in range(2, int(math.ceil(math.sqrt(n)))):
+    for i in range(2, int(math.ceil(math.sqrt(n))) + 1):
         if (n % i) == 0:
             return False
     return True
